@@ -1,0 +1,189 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employees": [
+    {
+      "NamaDepan": "Jane",
+      "NamaBelakang": "Florensa",
+      "Email": "florensaj21d@student.unhas.ac.id",
+      "TanggalLahir": "2023-10-17T16:00:00.000Z",
+      "JenisKelamin": "Perempuan",
+      "Pendidikan": "Intermediat",
+      "Perusahaan": "goo",
+      "Pengalaman": "",
+      "Package": "",
+      "id": 1
+    },
+    {
+      "NamaDepan": "",
+      "NamaBelakang": "",
+      "Email": "",
+      "TanggalLahir": "",
+      "JenisKelamin": "",
+      "Pendidikan": "",
+      "Perusahaan": "",
+      "Pengalaman": "",
+      "Package": "",
+      "id": 2
+    },
+    {
+      "NamaDepan": "Jane",
+      "NamaBelakang": "Florensa",
+      "Email": "florensaj21d@student.unhas.ac.id",
+      "TanggalLahir": "2023-10-17T16:00:00.000Z",
+      "JenisKelamin": "",
+      "Pendidikan": "Intermediat",
+      "Perusahaan": "goo",
+      "Pengalaman": 4,
+      "Package": 12,
+      "id": 3
+    },
+    {
+      "NamaDepan": "",
+      "NamaBelakang": "",
+      "Email": "",
+      "TanggalLahir": "",
+      "JenisKelamin": "",
+      "Pendidikan": "",
+      "Perusahaan": "",
+      "Pengalaman": "",
+      "Package": "",
+      "id": 4
+    },
+    {
+      "NamaDepan": "",
+      "NamaBelakang": "",
+      "Email": "",
+      "TanggalLahir": "",
+      "JenisKelamin": "",
+      "Pendidikan": "",
+      "Perusahaan": "",
+      "Pengalaman": "",
+      "Package": "",
+      "id": 5
+    },
+    {
+      "NamaDepan": "",
+      "NamaBelakang": "",
+      "Email": "",
+      "TanggalLahir": "",
+      "JenisKelamin": "",
+      "Pendidikan": "",
+      "Perusahaan": "",
+      "Pengalaman": "",
+      "Package": "",
+      "id": 6
+    },
+    {
+      "NamaDepan": "",
+      "NamaBelakang": "",
+      "Email": "",
+      "TanggalLahir": "",
+      "JenisKelamin": "",
+      "Pendidikan": "",
+      "Perusahaan": "",
+      "Pengalaman": "",
+      "Package": "",
+      "id": 7
+    },
+    {
+      "NamaDepan": "",
+      "NamaBelakang": "",
+      "Email": "",
+      "TanggalLahir": "",
+      "JenisKelamin": "",
+      "Pendidikan": "",
+      "Perusahaan": "",
+      "Pengalaman": "",
+      "Package": "",
+      "id": 8
+    },
+    {
+      "NamaDepan": "",
+      "NamaBelakang": "",
+      "Email": "",
+      "TanggalLahir": "",
+      "JenisKelamin": "",
+      "Pendidikan": "",
+      "Perusahaan": "",
+      "Pengalaman": "",
+      "Package": "",
+      "id": 9
+    },
+    {
+      "NamaDepan": "Jane",
+      "NamaBelakang": "Florensa",
+      "Email": "florensaj21d@student.unhas.ac.id",
+      "TanggalLahir": "2023-10-17T16:00:00.000Z",
+      "JenisKelamin": "Perempuan",
+      "Pendidikan": "Intermediat",
+      "Perusahaan": "google",
+      "Pengalaman": 4,
+      "Package": 12,
+      "id": 10
+    },
+    {
+      "NamaDepan": "",
+      "NamaBelakang": "",
+      "Email": "",
+      "TanggalLahir": "",
+      "JenisKelamin": "",
+      "Pendidikan": "",
+      "Perusahaan": "",
+      "Pengalaman": "",
+      "Package": "",
+      "id": 11
+    },
+    {
+      "NamaDepan": "",
+      "NamaBelakang": "",
+      "Email": "",
+      "TanggalLahir": "",
+      "JenisKelamin": "",
+      "Pendidikan": "",
+      "Perusahaan": "",
+      "Pengalaman": "",
+      "Package": "",
+      "id": 12
+    },
+    {
+      "NamaDepan": "Jane",
+      "NamaBelakang": "Florensa",
+      "Email": "florensaj21d@student.unhas.ac.id",
+      "TanggalLahir": "2023-10-02T16:00:00.000Z",
+      "JenisKelamin": "Perempuan",
+      "Pendidikan": "Diploma",
+      "Perusahaan": "goo",
+      "Pengalaman": 3,
+      "Package": 12,
+      "id": 13
+    },
+    {
+      "NamaDepan": "",
+      "NamaBelakang": "",
+      "Email": "",
+      "TanggalLahir": "",
+      "JenisKelamin": "",
+      "Pendidikan": "",
+      "Perusahaan": "",
+      "Pengalaman": "",
+      "Package": "",
+      "id": 14
+    }
+  ]
+}
