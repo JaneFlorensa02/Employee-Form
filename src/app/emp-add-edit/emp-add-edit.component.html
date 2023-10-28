@@ -2,7 +2,7 @@
     <h1>Formulir Karyawan</h1>
 </div>
 <form [formGroup]="empForm" (ngSubmit)="onFormSubmit()"> 
-<div mat-dialog-content class="content">
+    <div mat-dialog-content class="content">
     <div class="row">
         <mat-form-field appearance="outline">
             <mat-label>Nama Depan</mat-label>
@@ -46,7 +46,7 @@
               </mat-option>
             </mat-select>
           </mat-form-field>
-        <mat-form-field appearance="outline">
+          <mat-form-field appearance="outline">
             <mat-label>Perusahaan</mat-label>
             <input matInput placeholder="Contoh: Google" formControlName="Perusahaan">
         </mat-form-field>
@@ -55,16 +55,17 @@
         <mat-form-field appearance="outline">
             <mat-label>Pengalaman</mat-label>
             <input matInput placeholder="Contoh: 4" type="number" formControlName="Pengalaman">
+            <mat-hint> Dalam Tahun</mat-hint>
         </mat-form-field>
         <mat-form-field appearance="outline">
-            <mat-label>Package</mat-label>
-            <input matInput placeholder="Contoh: 12" type="number" formControlName="Package">
+            <mat-label>Pendapatan</mat-label>
+            <input matInput placeholder="Contoh: 12.000" type="text" formControlName="Pendapatan">
             <mat-hint> Dalam Rupiah</mat-hint>
         </mat-form-field>
     </div>
 </div>
-<div mat-dialog-actions class="action">
-    <button mat-raised-button type="button" [mat-dialog-close]="false">Cancel</button>
-    <button mat-raised-button color="primary" type="submit">{{data ? 'update': 'Save'}}</button>
-</div>
+    <div mat-dialog-actions class="action">
+        <button mat-raised-button type="button" [mat-dialog-close]="false">Cancel</button>
+        <button mat-raised-button color="primary" type="submit">{{data ? 'update': 'Save'}}</button>
+    </div>
 </form>

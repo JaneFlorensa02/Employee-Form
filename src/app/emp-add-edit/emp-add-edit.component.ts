@@ -1,14 +1,13 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { EmployeeService } from '../service/employee.service';
-import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
-import { DialogRef } from '@angular/cdk/dialog';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { CoreService } from '../core/core.service';
+import { EmployeeService } from '../services/employee.service';
 
 @Component({
   selector: 'app-emp-add-edit',
   templateUrl: './emp-add-edit.component.html',
-  styleUrls: ['./emp-add-edit.component.scss']
+  styleUrls: ['./emp-add-edit.component.scss'],
 })
 export class EmpAddEditComponent implements OnInit {
   empForm: FormGroup;
@@ -17,13 +16,17 @@ export class EmpAddEditComponent implements OnInit {
   education: string[] = [
     'SMA',
     'Diploma',
-    'Intermediat',
-    'Pascasarjana',
+    'Sarjana',
+    'Magister',
+    'Doktor',
+    
+    
+    
   ];
 
   constructor(
     private _fb: FormBuilder, 
-    private _empService:EmployeeService, 
+    private _empService: EmployeeService,
     private _dialogRef: MatDialogRef<EmpAddEditComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any,
     private _coreService: CoreService
@@ -37,7 +40,7 @@ export class EmpAddEditComponent implements OnInit {
       Pendidikan: '',
       Perusahaan: '',
       Pengalaman: '',
-      Package: '',
+      Pendapatan: '',
     });
   }
 
@@ -48,7 +51,8 @@ export class EmpAddEditComponent implements OnInit {
   onFormSubmit() {
     if(this.empForm.valid) {
       if(this.data) {
-        this._empService.updateEmployee(this.data.id, this.empForm.value)
+        this._empService
+        .updateEmployee(this.data.id, this.empForm.value)
         .subscribe({
           next: (val: any ) => {
             this._coreService.openSnackBar('Data Telah Diperbarui');
@@ -59,7 +63,7 @@ export class EmpAddEditComponent implements OnInit {
           },
         });
 
-      } else{
+      } else {
         this._empService.addEmployee(this.empForm.value).subscribe({
           next: (val: any ) => {
             this._coreService.openSnackBar('Data Karyawan Berhasil Ditambahkan');
@@ -74,3 +78,5 @@ export class EmpAddEditComponent implements OnInit {
     }
   }
 }
+
+

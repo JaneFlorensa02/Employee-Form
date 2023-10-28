@@ -6,10 +6,12 @@ describe('EmpAddEditComponent', () => {
   let component: EmpAddEditComponent;
   let fixture: ComponentFixture<EmpAddEditComponent>;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [EmpAddEditComponent]
-    });
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ EmpAddEditComponent ]
+    })
+    .compileComponents();
+
     fixture = TestBed.createComponent(EmpAddEditComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

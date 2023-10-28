@@ -3,10 +3,9 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class EmployeeService {
-
   constructor(private _http: HttpClient) {}
 
   addEmployee(data: any): Observable<any> {
@@ -14,7 +13,7 @@ export class EmployeeService {
   }
 
   updateEmployee(id: number, data: any): Observable<any> {
-    return this._http.put('http://localhost:3000/employees/${id}', data);
+    return this._http.put(`http://localhost:3000/employees/${id}`, data);
   }
 
   getEmployeeList(): Observable<any> {
@@ -22,6 +21,6 @@ export class EmployeeService {
   }
 
   deleteEmployee(id: number): Observable<any> {
-    return this._http.delete('http://localhost:3000/employees/${id}');
+    return this._http.delete(`http://localhost:3000/employees/${id}`);
   }
 }
